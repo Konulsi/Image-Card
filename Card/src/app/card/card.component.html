@@ -1,0 +1,17 @@
+<mat-card style="height: 600px" class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ titleChild }}</mat-card-title>
+  </mat-card-header>
+  <img
+    style="height: 450px"
+    class="img-fluid"
+    mat-card-image
+    [src]="imageUrlChild"
+  />
+  <mat-card-content>
+    <h3>{{ userNameChild }}</h3>
+    <p>
+      {{ contentChild }}
+    </p>
+  </mat-card-content>
+</mat-card>

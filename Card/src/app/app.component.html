@@ -1,0 +1,36 @@
+<!-- <div class="container mt-5">
+  <div class="row">
+    <div style="height: 600px" class="col-md-4" *ngFor="let post of posts">
+      <mat-card style="height: 600px" class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{ post.title }}</mat-card-title>
+        </mat-card-header>
+        <img
+          style="height: 450px"
+          class="img-fluid"
+          mat-card-image
+          [src]="post.imageUrl"
+        />
+        <mat-card-content>
+          <h3>{{ post.username }}</h3>
+          <p>
+            {{ post.content }}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div> -->
+
+<div class="container mt-5">
+  <div class="row">
+    <div style="height: 600px" class="col-md-4" *ngFor="let post of posts">
+      <app-card
+        [titleChild]="post.title"
+        [imageUrlChild]="post.imageUrl"
+        [userNameChild]="post.username"
+        [contentChild]="post.content"
+      ></app-card>
+    </div>
+  </div>
+</div>
